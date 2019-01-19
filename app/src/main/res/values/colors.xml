@@ -4,4 +4,10 @@
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
     <color name="colorBg">#f2f0f0</color>
+    <color name="azul">#348ac8</color>
+
+
+    <color name="colorPrimaryTab">#348ac8</color>
+    <color name="colorPrimaryDarkTab">#5D4037</color>
+    <color name="colorAccentTab">#CDDC39</color>
 </resources>

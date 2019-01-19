@@ -9,6 +9,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import org.json.JSONArray;
+import org.json.JSONObject;
 
 import java.io.DataOutputStream;
 import java.net.HttpURLConnection;
@@ -65,7 +66,8 @@ public class MainActivity extends AppCompatActivity {
         HttpURLConnection conection=null;
         String respuesta="";
         try {
-            URL url=new URL("http://192.168.2.25/login2.php");
+            //URL url=new URL("http://192.168.2.25/login2.php");
+            URL url=new URL("http://192.168.0.13/login2.php");
             conection=(HttpURLConnection)url.openConnection();
             conection.setRequestMethod("POST");
             conection.setRequestProperty("Content-Length",""+Integer.toString(parametros.getBytes().length));
@@ -92,7 +94,8 @@ public class MainActivity extends AppCompatActivity {
             JSONArray json=new JSONArray(respuesta);
             if (json.length()>0){
                 rest=1;
-            }
+                }
+
 
         }catch (Exception e){}
         return rest;
